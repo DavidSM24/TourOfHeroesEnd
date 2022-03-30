@@ -1,0 +1,13 @@
+<div>
+
+<label for="search-box">Barra de Búsqueda</label>
+<input (input)="search(searchBox.value)" #searchBox id="search-box"/>
+
+<ul class="search-result">
+    <li *ngFor="let hero of heroes$ | async">
+        <a routerLink="/detail/{{hero.id}}">
+            {{hero.name}}
+        </a>
+    </li>
+</ul>
+</div>

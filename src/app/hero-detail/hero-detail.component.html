@@ -1,0 +1,11 @@
+<div *ngIf="this.hero!=null">
+    <h2>
+        {{hero.name | uppercase}}
+    </h2>
+    <div>id: {{hero.id}}</div>
+    <div>
+        <label for="hero-name"> Nombre: </label>
+        <input id="hero-name" [(ngModel)]="hero.name" placeholder="name">
+    </div>
+</div>
+<button type="button" (click)="save()">Guardar y volver</button>
