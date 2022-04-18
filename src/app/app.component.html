@@ -1,11 +1,12 @@
 <div class="container">
 
-  <h1>{{title}}</h1>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light" id="mainNav">
-    <ul class="navbar-nav">
-      <li><button type="button" class="btn btn-secondary" routerLink="/dashboard">Dashboard</button></li>
-      <li><button type="button" class="btn btn-secondary" routerLink="/heroes">Héroes</button></li>
-    </ul>
+
+  <nav class="navbar fixed-top navbar-light bg-light" id="mainNav" style="margin-top: 0.5% !important; margin-left: 0.5%; margin-right: 0.5%;">
+
+      <button style="margin-left: 1.5%;" type="button" class="btn btn-secondary" routerLink="/dashboard">Dashboard</button>
+      <h1>{{title}}</h1>
+      <button style="margin-right: 1.5%;" type="button" class="btn btn-secondary" routerLink="/heroes">Héroes</button>
+
 
   </nav>
   <router-outlet></router-outlet>

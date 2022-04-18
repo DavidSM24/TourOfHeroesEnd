@@ -2,7 +2,7 @@
 <ul class="heroes">
     <li *ngFor="let hero of heroes">
 
-      <span routerLink="/detail/{{hero.id}}" class="badge" [class.selected]="hero === selectedHero">{{hero.id}} {{hero.name}}</span>
+      <span style="width: 60% !important;" routerLink="/detail/{{hero.id}}" class="badge" [class.selected]="hero === selectedHero">{{hero.id}} {{hero.name}}</span>
       <button (click)="this.delete(hero)" class="delete" type="button">Eliminar</button>
     </li>
 
