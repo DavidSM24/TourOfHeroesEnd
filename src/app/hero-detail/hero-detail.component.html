@@ -1,11 +1,26 @@
-<div *ngIf="this.hero!=null">
+<div *ngIf="this.hero != null">
+  <div>
     <h2>
-        {{hero.name | uppercase}}
+      {{ hero.name | uppercase }}
     </h2>
-    <div>id: {{hero.id}}</div>
+    <div>id: {{ hero.id }}</div>
     <div>
-        <label for="hero-name"> Nombre: </label>
-        <input id="hero-name" [(ngModel)]="hero.name" placeholder="name">
+      <label for="hero-name"> Nombre: </label>
+      <input
+        class="form-control"
+        id="formGroupExampleInput"
+        [(ngModel)]="hero.name"
+        placeholder="name"
+      />
     </div>
+
+    <button
+      type="button"
+      class="btn btn-dark"
+      (click)="save()"
+      style="margin-top: 1%"
+    >
+      Guardar y volver
+    </button>
+  </div>
 </div>
-<button type="button" (click)="save()">Guardar y volver</button>

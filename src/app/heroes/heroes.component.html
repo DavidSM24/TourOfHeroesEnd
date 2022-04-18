@@ -1,9 +1,12 @@
 <h2>Mis Héroes</h2>
 <ul class="heroes">
     <li *ngFor="let hero of heroes">
-        <span routerLink="/detail/{{hero.id}}" class="badge" [class.selected]="hero === selectedHero">{{hero.id}} {{hero.name}}</span>
-        <button (click)="this.delete(hero)" type="button">Eliminar</button>
+
+      <span routerLink="/detail/{{hero.id}}" class="badge" [class.selected]="hero === selectedHero">{{hero.id}} {{hero.name}}</span>
+      <button (click)="this.delete(hero)" class="delete" type="button">Eliminar</button>
     </li>
+
+
 </ul>
 
 <h2>Crea un Héroe</h2>

@@ -1,8 +1,15 @@
-<h1>{{title}}</h1>
-<nav>
-  <div><a routerLink="/dashboard">Dashboard</a> </div>
-  <div><a routerLink="/heroes">Heroes</a></div>
-  
-</nav>
-<router-outlet></router-outlet>
-<app-messages></app-messages>
+<div class="container">
+
+  <h1>{{title}}</h1>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" id="mainNav">
+    <ul class="navbar-nav">
+      <li><button type="button" class="btn btn-secondary" routerLink="/dashboard">Dashboard</button></li>
+      <li><button type="button" class="btn btn-secondary" routerLink="/heroes">Héroes</button></li>
+    </ul>
+
+  </nav>
+  <router-outlet></router-outlet>
+  <app-messages></app-messages>
+</div>
+
+
