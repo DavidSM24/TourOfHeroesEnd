@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { interval } from 'rxjs';
 import { Hero } from '../models/hero';
 import { HeroService } from '../services/hero.service';
 
@@ -9,15 +10,20 @@ import { HeroService } from '../services/hero.service';
 })
 export class DashboardComponent implements OnInit {
 
+  charged: boolean = false;
+
   heroes: Hero[] = [];
 
   constructor(private heroService: HeroService) { }
 
   ngOnInit(): void {
     this.getHeroes();
+    this.charged = true;
   }
 
   async getHeroes(): Promise<void> {
-    this.heroes=await (await this.heroService.getAll()).slice(0,5);
+    this.heroes= (await this.heroService.getAll()).slice(0,5);
+
   }
+
 }

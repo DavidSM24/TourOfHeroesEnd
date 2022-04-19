@@ -3,12 +3,12 @@
 h2 {
     text-align: center;
   }
-  
+
   .heroes-menu {
     padding: 0;
     margin: auto;
     max-width: 1000px;
-  
+
     /* flexbox */
     display: flex;
     flex-direction: row;
@@ -17,7 +17,7 @@ h2 {
     align-content: flex-start;
     align-items: flex-start;
   }
-  
+
   a {
     background-color: #3f525c;
     border-radius: 2px;
@@ -31,20 +31,61 @@ h2 {
     min-width: 70px;
     margin: .5rem auto;
     box-sizing: border-box;
-  
+
     /* flexbox */
     order: 0;
     flex: 0 1 auto;
     align-self: auto;
   }
-  
+
   @media (min-width: 600px) {
     a {
       width: 18%;
       box-sizing: content-box;
     }
   }
-  
+
   a:hover {
     background-color: #000;
   }
+
+  /* Application-wide Styles */
+
+h1 {
+  color: rgb(255, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 250%;
+}
+
+h2, h3 {
+  color: #444;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+
+.container {
+  padding: 2%;
+  min-width: 100%;
+  min-height:100vh;
+  background-color: rgb(255, 187, 61) !important;
+  padding-top: 8%;
+}
+
+#mainNav {
+  border: 2px solid #000;
+  border-radius: 12px;
+  background-color: #435A60 !important;
+  padding: 0.6% ;
+}
+
+#mainNav button{
+  margin-top:0.5rem;margin-bottom: 0.5rem;
+  margin-left:0.4rem;
+}
+
+.clearfix{
+  top: 48% !important;
+  left:48% !important;
+  width: 5%;
+  position: absolute;
+}
