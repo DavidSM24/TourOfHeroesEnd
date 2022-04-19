@@ -16,7 +16,10 @@ h2, h3 {
   padding: 2%;
   min-width: 100%;
   min-height:100vh;
-  background-color: rgb(255, 187, 61) !important;
+  background-image: url(../assets/background.jpg);
+  background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
   padding-top: 8%;
 }
 

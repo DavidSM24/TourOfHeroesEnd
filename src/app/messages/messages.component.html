@@ -3,6 +3,6 @@
     <h2>Mensajes</h2>
     <button type="button" class="btn btn-secondary"
             (click)="ms.clear()">Borrar mensajes</button>
-    <div *ngFor='let message of ms.messages'> {{message}} </div>
+    <div class="message" *ngFor='let message of ms.messages'> {{message}} </div>
 
   </div>

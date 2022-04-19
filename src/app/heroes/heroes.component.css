@@ -1,4 +1,8 @@
 /* HeroesComponent's private CSS styles */
+h2, label{
+  color:white;
+}
+
 .heroes {
   margin: 0 0 2em 0;
   list-style-type: none;
